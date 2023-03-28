@@ -1,0 +1,7 @@
+table th, td{
+    border: 2px solid black;
+}
+footer{
+    background: linear-gradient(250deg, violet, aquamarine);
+
+}
