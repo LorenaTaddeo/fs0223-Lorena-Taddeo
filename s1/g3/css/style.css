@@ -4,9 +4,9 @@
     text-align:center;
     margin: 0 auto;
     }
-.simply{
-    background-color: #f0df7c33;
-    border-top: 1px solid #f98f2c;
+#intestazione{
+    background-color: #f5e27533;
+    border-top: 1px solid #ef9746;
     padding: 10px 0;
 }
 h1{
@@ -23,26 +23,26 @@ h1{
 section{
     font-family: 'Roboto', sans-serif;
 }
-.centrato{
+.maincontent{
     width: 500px;
     margin:0 auto;
     max-width: 100%;
 }
-p a{
-    color:rgb(0, 191, 255);
-}
-#intestazione{
-    color:orange;
-    border-left: solid rgba(234, 142, 36, 0.806);
+.ft{
+    color:rgb(222, 182, 108);
+    border-left: solid rgba(36, 43, 234, 0.806);
     margin: 4px;
 }
-h2, ol{
+h2{
     border-bottom: 1px solid blue;
     padding-bottom: 15px;
 }
-.centratura{
+.titoli{
     text-align:center;
 }
 img, video{
     max-width: 100%;
+}
+.link{
+    color:rgb(121, 13, 126);
 }
