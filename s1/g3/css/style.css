@@ -26,11 +26,12 @@ section{
 .maincontent{
     width: 500px;
     margin:0 auto;
-    max-width: 100%;
 }
 .ft{
     color:rgb(222, 182, 108);
-    border-left: solid rgba(36, 43, 234, 0.806);
+    border-left: 2px outset rgba(36, 43, 234, 0.806);
+    padding-left: 15px;
+    border-width: 1px;
     margin: 4px;
 }
 h2{
@@ -45,4 +46,12 @@ img, video{
 }
 .link{
     color:rgb(121, 13, 126);
+}
+.image{
+    color: grey;
+    text-align: center;
+}
+.piedi{
+    margin: 0 auto;
+    width: 600px;
 }
