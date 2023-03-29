@@ -1,0 +1,41 @@
+
+.testa{
+    font-family: 'Alkatra', cursive;
+    text-align:center;
+    margin: 0 auto;
+    }
+.simply{
+    border-top: solid rgb(227, 202, 61);
+    background-color: rgba(255, 255, 158, 0.603);
+}
+h1{
+    text-indent: 30px;
+}
+.scatola{
+    width: 0 auto;
+    position:absolute;
+    top: 50px;
+    margin:0 auto;
+    text-align:center
+}
+section{
+    font-family: 'Roboto', sans-serif;
+}
+.centrato{
+    width: 700px;
+    margin:0 auto;
+}
+p a{
+    color:rgb(0, 191, 255);
+}
+.link{
+    color:orange;
+    border-left:solid rgba(234, 142, 36, 0.806);
+    margin: 4px;
+}
+h2{
+    margin-inline-start: solid rgb(53, 168, 206);
+}
+.centratura{
+    text-align:center;
+}
