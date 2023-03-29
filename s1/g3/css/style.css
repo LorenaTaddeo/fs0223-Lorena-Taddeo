@@ -5,11 +5,13 @@
     margin: 0 auto;
     }
 .simply{
-    border-top: solid rgb(227, 202, 61);
-    background-color: rgba(255, 255, 158, 0.603);
+    background-color: #f0df7c33;
+    border-top: 1px solid #f98f2c;
+    padding: 10px 0;
 }
 h1{
     text-indent: 30px;
+    text-align:center;
 }
 .scatola{
     width: 0 auto;
@@ -22,20 +24,25 @@ section{
     font-family: 'Roboto', sans-serif;
 }
 .centrato{
-    width: 700px;
+    width: 500px;
     margin:0 auto;
+    max-width: 100%;
 }
 p a{
     color:rgb(0, 191, 255);
 }
-.link{
+#intestazione{
     color:orange;
-    border-left:solid rgba(234, 142, 36, 0.806);
+    border-left: solid rgba(234, 142, 36, 0.806);
     margin: 4px;
 }
-h2{
-    margin-inline-start: solid rgb(53, 168, 206);
+h2, ol{
+    border-bottom: 1px solid blue;
+    padding-bottom: 15px;
 }
 .centratura{
     text-align:center;
+}
+img, video{
+    max-width: 100%;
 }
