@@ -19,7 +19,7 @@ img{
     margin: 20px 20px;
     padding: 25px 15px 25px 15px;
     text-align: center;
-    box-shadow: 1px;
+    box-shadow: 4px;
     background-attachment: fixed;
 }
 #lista ul li{
@@ -36,6 +36,7 @@ h1{
     color: gray;
 }
 #maincontent{
+    line-height: 1.7rem;
     font-family: 'Poppins', sans-serif;
     background-color: white;
     padding: 25px 15px 25px 15px;
@@ -49,14 +50,24 @@ h1{
     font-weight: bold;
 }
 .bottone{
-    border-radius: 35%;
-    border: 2px;
+        background-color: rgb(216, 214, 214);
+        border-radius: 5px;
+        border: 1px inset black;
 }
 
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
+#tabella table td, table th{
+    border:1px solid grey;
+    padding:12px;
+    text-align: center;
+}
+#testatabella{
+    background-color: rgb(109, 109, 239);
+}
+
 
 /* FORM */
 
