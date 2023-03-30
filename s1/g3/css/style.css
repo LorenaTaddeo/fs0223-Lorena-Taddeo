@@ -9,17 +9,6 @@
     border-top: 1px solid #ef9746;
     padding: 10px 0;
 }
-h1{
-    text-indent: 30px;
-    text-align:center;
-}
-.scatola{
-    width: 0 auto;
-    position:absolute;
-    top: 50px;
-    margin:0 auto;
-    text-align:center
-}
 section{
     font-family: 'Roboto', sans-serif;
 }
@@ -40,6 +29,7 @@ h2{
 }
 .titoli{
     text-align:center;
+    text-indent: 30px;
 }
 img, video{
     max-width: 100%;
