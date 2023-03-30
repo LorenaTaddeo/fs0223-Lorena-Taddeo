@@ -19,15 +19,15 @@
     <!-- h1 -->
     <!-- menù -->
     <header id="quadratoblu">
-        <img src="assets/img/logo.svg">
         <div class="spazio">
+        <img src="assets/img/logo.svg" alt="logo" width="250" height="60">
             <h2 class="bianco">EPICODE - IL BLOG DEI DEVELOPERS</h2>
         </div>
         <nav id="lista" class="spazio">
             <ul class="bianco">
-                <li><a href="#">&rArr;HOME&lArr;</a></li>
-                <li><a href="#">&rArr;ARTICOLI&lArr;</a></li>
-                <li><a href="#">&rArr;LAVORA CON NOI&lArr;</a></li>
+                <li><a href="index.html" title="HOME">&rArr;HOME&lArr;</a></li>
+                <li><a href="articoli.html" title="ARTICOLI">&rArr;ARTICOLI&lArr;</a></li>
+                <li><a href="contatti.html" title="LAVORA-CON-NOI">&rArr;LAVORA CON NOI&lArr;</a></li>
             </ul>
         </nav>
     </header class="spazio">
@@ -37,43 +37,55 @@
         <!-- div -->
         <!-- div con ul riquadro nelle parole-->
         <!-- div  con a-->
-    <h1 class="spazio">Come creare un template per i post</h1>
     <div id="grigio" class="spazio">
-        <p><i class="fas fa-pen-square"></i> di Mario Rossi - <i class="fas fa-clock"></i> pubblicato il 25-10-2020</p>
-    </div>
-    <div class="spazio">
-        La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <span class="fucsia">parti comuni</span> da applicare a tutte le pagine
-    </div>
-    <div class="spazio">
-        Le varie aree saranno quindi suddivise in:
-        <ul class="spazio">
-            <li> Contenuti di intestazione dei tag <span class="bottone">header</span></li>
-            <li>Contenuti centrali variabili del tag <span class="bottone">main</span> (corpo principale)</li>
-            <li>Contenuti di fine pagina comuni, da inserire nel tag <span class="bottone">footer</span></li>
-        </ul>
-    </div>
-    <div class="spazio">
-        <p>Formattazione del codice<br>
-        Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <span class="fucsia">selezionare con i CSS</span>. Perciò i passi saranno:
-            <ul>
+        <h1 class="spazio">Come creare un template per i post</h1>
+    
+        <p>
+            <i class="fas fa-pen-square"></i> di Mario Rossi - 
+            <i class="fas fa-clock"></i> pubblicato il 25-10-2020
+        </p>
+
+        <p> 
+            La prima cosa da fare è suddividere in 
+            blocchi logici la pagina, identificando le 
+            <span class="fucsia">parti comuni</span> da applicare a tutte le pagine
+        </p>
+    
+        <p>Le varie aree saranno quindi suddivise in:
+            <ul class="spazio">
+                <li>Contenuti di intestazione dei tag <span class="bottone">header</span></li>
+                <li>Contenuti centrali variabili del tag <span class="bottone">main</span> (corpo principale)</li>
+                <li>Contenuti di fine pagina comuni, da inserire nel tag <span class="bottone">footer</span></li>
+            </ul>
+        </p>
+
+        <h3>Formattazione del codice</h3>
+            
+        <p>
+            Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <span class="fucsia">selezionare con i CSS</span>. Perciò i passi saranno:
+        </p>
+        <p>
+            <ol>
                 <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
                 <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
                 <li>Applicare gli stili CSS</li>
-            </ul>
+            </ol>
         </p>
+        
     </div>
     <div>
-        <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale.</p>
-        <div>
+        <p>
+            L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale.</p>
             <table id="tabella">
                 <caption>Diffusione dei CSS</caption>
-                <tbody id="testatabella">
+                <thead id="testatabella">
                 <tr>
                     <th>Anno</th>
                     <th>% di utilizzo</th>
                     <th>Supporto browsers</th>
                 </tr>
-                </tbody>
+                </thead>
+                <tbody>
                 <tr>
                     <td>2000</td>
                     <td>20%</td>
@@ -99,10 +111,30 @@
                     <td>100%</td>
                     <td>76%</td>
                 </tr>
+                </tbody>
             </table>
-        </div>
-
     </div>
+    <p>
+        Un test di validazione potrà essere fatto tramite il 
+        <a href="">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
+    </p>
+
+    <iframe 
+        width="640" 
+        height="360" 
+        src="https://www.youtube.com/embed/QiYgE7Hceks" 
+        title="&quot;Cambio di rotta&quot; per un futuro migliore in pochi mesi con EPICODE" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+
+    <aside>
+        <form>
+            
+        </form>
+    </aside>
+
         
 
     </main>

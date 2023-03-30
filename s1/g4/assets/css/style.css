@@ -30,7 +30,9 @@ a ::before{
 }
 /* MAIN */
 h1{
+
     font-weight:bold;
+    font-size: 1.8rem
 }
 #grigio{
     color: gray;
