@@ -82,9 +82,20 @@ if ((totalShoppingCart - sconto) >= 50){
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
+{
+let num1 = 66;
+let num2 = 78;
+let num3 = 14;
+let arr = [];
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+if(arr.length == 0){
+  arr.push(num1, num2, num3)
+}
+arr.sort(function(a,b){
+  return b - a
+});
+ console.log(arr)
+}
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
@@ -178,11 +189,14 @@ console.log(me)
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+{
+let arr = [];
+arr.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(arr);
+}
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+arr[9] = 100;
+console.log(arr);

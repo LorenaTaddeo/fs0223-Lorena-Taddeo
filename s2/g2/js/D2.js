@@ -13,7 +13,7 @@ REGOLE
 //1-String -> "insieme di caratteri o parole racchiuse da apici singoli o doppi oppure backtick"
 let string = "questa è una stringa";//virgolette
 let string1 = 'questa è una stringa';//apici singoli
-let string3 = 
+let string3 = `questa è una stringa`;//backtick
 
 //2-Number -> "un qualsiasi carattere numerico che si intero o decimale"
 let number1 = 5;
