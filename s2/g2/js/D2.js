@@ -10,13 +10,33 @@ REGOLE
 /* ESERCIZIO 1
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
-//1-String -> "insieme di caratteri o parole racchiuse da apici singoli o doppi"
+//1-String -> "insieme di caratteri o parole racchiuse da apici singoli o doppi oppure backtick"
+let string = "questa è una stringa";//virgolette
+let string1 = 'questa è una stringa';//apici singoli
+let string3 = 
+
 //2-Number -> "un qualsiasi carattere numerico che si intero o decimale"
+let number1 = 5;
+console.log(number1);
+let number2 = 5.5;
+console.log(number2);
+
 //3-Boolean -> "un output che può essere "true" oppure "false""
+let maggiorenne = true;
+let centenario = false;
+
 //4-Null -> "un output che si ottiene quando si cerca un elemento che non esiste"
+let div = document.getElementById("test");
+console.log(div);
 //5-Undefined -> "un output che si ottiene quando una variabile non ha un valore definito"
 //6-Object -> "un insieme di coppie chiave-valore che ne definisce le proprietà"
+let persona = {
+  nome: "Lorena",
+  cognome: "Taddeo",
+  età: 26,
+};
 //7-Array -> "una variabile speciale che può contenere più valori"
+let arr = [0, 1, 2, 3, 4, 5];
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
