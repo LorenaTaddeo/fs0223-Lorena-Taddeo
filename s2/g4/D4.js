@@ -113,8 +113,9 @@ Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO",
 */
 for (let i = 0; i < starWarsCharacters.length; i++){
   characters.push(starWarsCharacters[i].name);
-  console.log(characters);
 }
+
+console.log(characters);
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un array chiamato "femaleCharacters" e inserisci un oggetto con questa struttura: 
@@ -182,9 +183,9 @@ let eyeColor = {
   */
   let totalMass = 0;
   let i = 0;
-  while (i < starWarsCharacters.length) {
+  while (i < starWarsCharacters.length, i++) {
     totalMass += Number(starWarsCharacters[i].mass);
-    i++;
+    
   }
 
   console.log(totalMass);
@@ -209,16 +210,16 @@ switch(true){
   case totalMass == 500 :
     console.log("Ship is half loaded");
     break;
-  case totalMass > 700 :
+  case totalMass > 700 && totalMass < 900 :
     console.log("Warning: Load is over 700");
     break;
-  case totalMass > 900 :
+  case totalMass > 900 && totalMass < 1000 :
     console.log("Critical Load: Over 900");
     break;
   case totalMass > 1000:
     console.log("DANGER! OVERLOAD ALERT: Jump ship now!");
     break;
-    default;
+    default:
     break;
 }
 
@@ -231,6 +232,7 @@ for(let i = 0; i < starWarsCharacters.length; i ++){
   }
 }
 console.log(starWarsCharacters);
+
 /* EXTRA ESERCIZIO 9
 
 Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome"
@@ -240,7 +242,13 @@ Usa uno più for loop per raggiungere il risultato
 
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
-femaleCharacters
+console.log(characters.length);
+
+for (i = 0; i < femaleCharacters.length; i++){
+  characters.splice(characters.indexOf(femaleCharacters[i].name), 1);
+}
+
+console.log(characters);
 
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
