@@ -5,13 +5,13 @@ html{
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    background-color:rgb(227, 227, 227);
+    background-color:#e9edee;
 
 
 }
 
 header{
-    background-color: rgb(40, 40, 67);
+    background-color: #222f3f;
 }
 
 #logo{
@@ -21,7 +21,7 @@ header{
 
 nav{
     display:flex;
-    background-color:rgb(4, 13, 65); 
+    background-color:#364758; 
     padding:10px;
     font-size:18px;
 }
@@ -47,7 +47,7 @@ main{
 }
 
 #shop{
-    background-color: rgb(255, 109, 12);
+    background-color: #f56600;
     padding: 10px;
     color:white;
     text-align:center;
@@ -91,7 +91,7 @@ h2{
     text-decoration: none;
     font-size:1.3rem;
     font-weight:bold;
-    color:rgb(21, 109, 120);
+    color:#085d69;
 }
 
 .spazio{
@@ -105,7 +105,7 @@ h2{
 
 .fourimg{
     border-radius:5%;
-    box-shadow: 10px 10px 8px #c4c4c49f;
+    box-shadow: 10px 10px 8px rgba(224,229,232,255);
     width:20%;
     height: 400px;
 }
@@ -160,7 +160,7 @@ h2{
     text-decoration: none;
     font-size:1.3rem;
     font-weight:bold;
-    color:rgb(21, 109, 120);  
+    color:#085d69;  
 }
 
 #img10{
@@ -182,17 +182,17 @@ h2{
     text-decoration: none;
     font-size:1.3rem;
     font-weight:bold;
-    color:rgb(21, 109, 120);  
+    color:#085d69;  
 }
 
 footer{
-    background-color:rgb(38, 46, 69);
+    background-color:#222f3f;
     text-align:center;
 
 }
 
 #back{
-    background-color: rgb(36, 36, 63);
+    background-color: #364758;
     padding:10px;
 }
 
