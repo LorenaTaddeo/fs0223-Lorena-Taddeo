@@ -46,14 +46,15 @@ console.log(parifiltrati);
 /* ESERCIZIO 4
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-let numeri0 = [1, 2, 3, 4, 5];
-function sommaNumeri0(i){
-for(let i = 0; i < numeri0.length; i++){
-  somma = numeri0[i] + n;
+let array = [1, 2, 3, 4];
+function sommareNumeri(array){
+  let risultato = 0;
+  for(let i = 0; i < array.length; i++){
+    risultato += array[i];
+  }
+  return risultato;
 }
-return somma;
-}
-console.log(sommaNumeri0, 5);
+console.log(sommareNumeri(array));
 
 
 /* ESERCIZIO 5
@@ -229,17 +230,43 @@ function vecchioFilm(movies){}
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+function numeroFilm(movies){
+  return movies.length;
+}
+console.log(numeroFilm(movies));
+
 /* ESERCIZIO 12
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+let film = [];
+for(let i = 0; i< movies.length; i++){
+film.push(movies[i].Title)
+}
+console.log(film);
+
+
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+let a = [];
+for(let i = 0; i < movies.length; i++){
+  if(movies[i].Year >= "2000"){
+    a.push(movies[i]);
+  }
+}
+console.log(a);
+
 
 /* ESERCIZIO 14
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+
+let b = "tt4154796";
+let search = movies.filter(function(x){
+  return x.imdbID === b;
+})
+console.log(search);
 
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
