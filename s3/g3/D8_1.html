@@ -173,7 +173,7 @@
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
     let button = document.querySelector('h1');
-    button.addEventListener('click', function(){
+      button.addEventListener('click', function(){
       button.textContent = button.textContent.slice(0, -1);
       
     })
@@ -199,16 +199,62 @@
     let footer = document.querySelector('footer');
     footer.addEventListener('click', revealFooterLink);
 
-    
+
     /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
-
+    /*
     const generateTable = function () {
-
-
+      let table = document.querySelector('#tableArea');
+      let taBella = document.createElement('table');
+      let thead = taBella.createElement('thead');
+      let row = taBella.createElement('tbody');
+      for(let t of table){
+        let td = document.createElement('td');
+        let text = document.createTextNode(t);
+        td.appendChild(text);
+        row.appendChild(th);
+      }
     }
+    let table = document.querySelector('tableArea');
+    let data = Object.t(mountains[0]);
+    generateTable();
+
+          let mountains = [
+        { name: "Monte Falco", height: 1658, place: "Parco Foreste Casentinesi" },
+        { name: "Monte Falterona", height: 1654, place: "Parco Foreste Casentinesi" },
+        { name: "Poggio Scali", height: 1520, place: "Parco Foreste Casentinesi" },
+        { name: "Pratomagno", height: 1592, place: "Parco Foreste Casentinesi" },
+        { name: "Monte Amiata", height: 1738, place: "Siena" }
+      ];
+
+      function generateTableHead(table, data) {
+        let thead = table.createTHead();
+        let row = thead.insertRow();
+        for (let key of data) {
+          let th = document.createElement("th");
+          let text = document.createTextNode(key);
+          th.appendChild(text);
+          row.appendChild(th);
+        }
+      }
+
+      function generateTable(table, data) {
+        for (let element of data) {
+          let row = table.insertRow();
+          for (key in element) {
+            let cell = row.insertCell();
+            let text = document.createTextNode(element[key]);
+            cell.appendChild(text);
+          }
+        }
+      }
+
+      let table = document.querySelector("table");
+      let data = Object.keys(mountains[0]);
+      generateTableHead(table, data);
+      generateTable(table, mountains);
 
     /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
@@ -233,9 +279,17 @@
     */
 
     const changeColorWithRandom = function () {
-
-
+      let randomColor = document.querySelector('h2');
+      let r = Math.floor(Math.random() * 256)//da 0 a 255
+      let g = Math.floor(Math.random() * 256)//da 0 a 255
+      let b = Math.floor(Math.random() * 256)//da 0 a 255
+      let colore = `rgb(${r},${g},${b})`;
+      randomColor = colore;
     }
+    colore.addEventListener('click',function(){
+    randomColor.style.color = changeColorWithRandom();
+    })
+    
 
     /* EXTRA ESERCIZIO 16
       Crea una funzione che elimini le vocali da ogni elemento testuale della pagina (puoi aiutarti con i nuovi metodi degli array di ES6)
