@@ -146,7 +146,7 @@ let eyeColor = {
     blue : [],
     yellow : [],
     brown : [],
-    'blue-gray' : [],
+    ['blue-gray'] : [],
   }
 }
 /* ESERCIZIO 5

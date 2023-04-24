@@ -169,9 +169,11 @@
     }}
     paintItGreen();
 
+    
     /* ESERCIZIO 9
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
+
     let button = document.querySelector('h1');
       button.addEventListener('click', function(){
       button.textContent = button.textContent.slice(0, -1);
@@ -254,8 +256,8 @@
           let immagine = document.createElement('td');
           immagine.textContent = riga.immagine;
 
-          let nome = document.createElement('td');
-          nome.textContent = riga.nome_prodotto;
+          let nome_prodotto = document.createElement('td');
+          nome_prodotto.textContent = riga.nome_prodotto;
 
           let quantità = document.createElement('td');
           quantità.textContent = riga.quantità;
@@ -263,78 +265,12 @@
           let prezzo = document.createElement('td');
           prezzo.textContent = riga.prezzo;
 
-          tr.append(immagine, nome, quantità, prezzo);
+          tr.append(immagine, nome_prodotto, quantità, prezzo);
           tbody.append(tr);
         }
       }
     generateTable();
 
-/*
-const generateTable = function () {
-        let tableArea = document.getElementById("tableArea");
-        let table = document.createElement("table");
-        let headerRow = table.insertRow(0);
-        let headerCell1 = headerRow.insertCell(0);
-        let headerCell2 = headerRow.insertCell(1);
-        let headerCell3 = headerRow.insertCell(2);
-        let headerCell4 = headerRow.insertCell(3);
-        headerCell1.textContent = "immagine";
-        headerCell2.textContent = "nome prodotto";
-        headerCell3.textContent = "quantità";
-        headerCell4.textContent = "prezzo";
-        for (var i = 1; i <= 5; i++) {
-          var row = table.insertRow(i);
-          var cell1 = row.insertCell(0);
-          var cell2 = row.insertCell(1);
-          var cell3 = row.insertCell(2);
-          var cell4 = row.insertCell(3);
-          cell1.innerHTML =
-            "<img src='immagine" + i + ".jpg' alt='Immagine " + i + "'>";
-          cell2.textContent = "Prodotto " + i;
-          cell3.textContent = "Quantità " + i;
-          cell4.textContent = "Prezzo " + i;
-        }
-        tableArea.appendChild(table);
-      };
-
-      generateTable();
-
-
-      /*
-          let mountains = [
-        { name: "Monte Falco", height: 1658, place: "Parco Foreste Casentinesi" },
-        { name: "Monte Falterona", height: 1654, place: "Parco Foreste Casentinesi" },
-        { name: "Poggio Scali", height: 1520, place: "Parco Foreste Casentinesi" },
-        { name: "Pratomagno", height: 1592, place: "Parco Foreste Casentinesi" },
-        { name: "Monte Amiata", height: 1738, place: "Siena" }
-      ];
-
-      function generateTableHead(table, data) {
-        let thead = table.createTHead();
-        let row = thead.insertRow();
-        for (let key of data) {
-          let th = document.createElement("th");
-          let text = document.createTextNode(key);
-          th.appendChild(text);
-          row.appendChild(th);
-        }
-      }
-
-      function generateTable(table, data) {
-        for (let element of data) {
-          let row = table.insertRow();
-          for (key in element) {
-            let cell = row.insertCell();
-            let text = document.createTextNode(element[key]);
-            cell.appendChild(text);
-          }
-        }
-      }
-
-      let table = document.querySelector("table");
-      let data = Object.keys(mountains[0]);
-      generateTableHead(table, data);
-      generateTable(table, mountains);
 
     /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
